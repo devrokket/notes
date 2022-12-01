@@ -10,7 +10,7 @@
   2. 로우레벨 리눅스는 처음이: 파이썬 개발자의 심연 탐방기 (조규진)
   - 백엔드 쪽은 접해본 적이 없어서 처음 듣는 내용이 많았음.
   - 리눅스 컨테이너 중 Docker를 사용함. (https://www.redhat.com/ko/topics/containers/what-is-docker) Red Hat 설명
-  - strace처럼 처음 들어보는 디버거
+  - strace처럼 처음 들어보는 디버거
   3. 비동기가 없는 것처럼 작동하는 리액트 컴포넌트 (이종은)
   - 동기 vs 비동기
   - 과거 프론트엔드는 멈춰 있는 스냅샷을 만드는 개념(동기)이었다면 현재는 동적인 프로그래밍(비동기) 비중이 늘어남.
@@ -28,11 +28,9 @@
   7. 머신러닝을 씁니다 (박해선)
   8. 오픈소스로 전생:PR 하나 날렸을 뿐인데 (강시온, 이상훈)
   - first-contributionhttps://github.com/firstcontributions/first-contributions
-  9. 비동기 작업의 가시성 향상을 통한 프로덕션 이슈 디버그 하기 (김준기)
+  9. 비동기 작업의 가시성 향상을 통한 프로덕션 이슈 디버그 하기 (김준기)
   - 비동기 작업의 가시성 향상을 통한 프로덕션 이슈 디버그하기, 김준기님(레블업 CTO)
   - asyncio 디버깅
   - aiomonitor라는 모니터에서 자동으로 디버깅이 돌아갈 수 있도록 함.
   - https://pypi.org/project/aiomonitor/
   - Open Source Software 컨트리뷰션 아카데 (https://www.oss.kr/contribution_academy)
-
-* 느낀점: 나도 한 개발 분야에 몰두해서 세미나(파이콘 등)에서 발표해보고 싶다!
