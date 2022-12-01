@@ -5,10 +5,10 @@
 
 > 발표 순서
   1. Beyond AI(신정규)
-    * 현재 AI 소프트웨어와 하드웨어 쪽의 발전 현황.
+    - 현재 AI 소프트웨어와 하드웨어 쪽의 발전 현황.
     * Backend.AI에 대해 알 수 있었음.
   2. 로우레벨 리눅스는 처음이: 파이썬 개발자의 심연 탐방기 (조규진)
-    * 백엔드 쪽은 접해본 적이 없어서 처음 듣는 내용이 많았음.
+    > > 백엔드 쪽은 접해본 적이 없어서 처음 듣는 내용이 많았음.
     * 리눅스 컨테이너 중 Docker를 사용함. (https://www.redhat.com/ko/topics/containers/what-is-docker) Red Hat 설명
     * strace처럼 처음 들어보는 디버거
   3. 비동기가 없는 것처럼 작동하는 리액트 컴포넌트 (이종은)
@@ -22,7 +22,7 @@
     * TesorFlow KR (https://www.facebook.com/groups/TensorFlowKR/) 커뮤니티 소개
     * ML 공부해보고 싶다는 생각이 들었음.
   5. FastAPI 고군분투기-Forklift (권강민)
-    * 
+    *
   6. NVDIA Omniverse for Generating Virtual Worlds
   7. 머신러닝을 씁니다 (박해선)
   8. 오픈소스로 전생:PR 하나 날렸을 뿐인데 (강시온, 이상훈)
