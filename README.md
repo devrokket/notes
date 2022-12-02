@@ -35,4 +35,70 @@
   - https://pypi.org/project/aiomonitor/
   - Open Source Software 컨트리뷰션 아카데 (https://www.oss.kr/contribution_academy)
 
-* 느낀점: 나도 한 개발 분야에 몰두해서 세미나(파이콘 등)에서 발표해보고 싶다!
+
+
+## MySQL & JDBC
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Scanner;
+
+public class JDBC_Example {
+
+   static final String DB_URL = "jdbc:mysql://localhost/playlist_schema?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone= UTC";
+   static final String USER = "root";
+   static final String PASS = "dusdjrndl00!";
+   static final String QUERY = "SELECT song_id, title, release_date, singer, genre FROM song";
+
+   public static void main(String[] args) {
+      // Open a connection
+
+      try(Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
+         Statement stmt = conn.createStatement();
+         ResultSet rs = stmt.executeQuery(QUERY);
+      ) {		      
+         while(rs.next()){
+            //Display values    	 
+            System.out.print("song_id: " + rs.getInt("song_id"));
+            System.out.print(", title: " + rs.getString("title"));
+            System.out.print(", release_date: " + rs.getDate("release_date"));
+            System.out.println(", singer: " + rs.getString("singer"));
+            System.out.println(", genre: " + rs.getString("genre"));
+
+
+
+         }
+
+	Scanner sc = new Scanner(System.in);
+	int option;
+
+	System.out.println("<<옵션을 선택하시오>>");
+ 	System.out.println("1.Check your playlist");
+ 	System.out.println("2.Listen to songs by genre");
+ 	System.out.println("3.Terminate program...");
+ 	option = sc.nextInt();
+ 	System.out.println(option);
+
+
+
+ 	if(option == 1) {
+ 		System.out.println("You choose option 1");
+ 	}
+ 	else if(option == 2)
+ 		System.out.println("You choose option 2");
+ 		// genre 별 출
+ 	else if(option == 3)
+ 		System.out.println("You choose option 3");
+ 		// 프로그램 종
+ 	else
+ 		System.out.println("Enter again...");
+ 		//3번 입력 전까지 반복으로 돌려야 함.
+
+      } catch (SQLException e) { //에러 발생 시 작
+         e.printStackTrace();
+      }
+   }
+}
