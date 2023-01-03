@@ -105,3 +105,11 @@ public class JDBC_Example {
 }
 =======
 >>>>>>> 5adc03da56cedd0f4e8bacb2e0d91b2524017e4a
+
+
+
+
+
+# 향후 계획
+
+- 게임 백엔드까지 구축한 후 개발 분야 정하기. 
